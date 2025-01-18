@@ -9,6 +9,7 @@ const cartCounter = document.getElementById("cart-count")
 const addressInput = document.getElementById("address")
 const addressWarn = document.getElementById("address-warn")
 
+
 let cart = [];
 
 //Abrir o modal do carrinho
@@ -167,9 +168,13 @@ checkOutBtn.addEventListener("click", function () {
     // Codifica a mensagem para o WhatsApp
     const message = encodeURIComponent(cartItems);
     const phone = "+5511970338992";
+    
+
 
     // Cria o link para o WhatsApp
-    const whatsappUrl = `https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`;
+    const whatsappUrl = `https://wa.me/${phone}?text=${message}%0AEndereço: ${addressInput.value} ${cartTotal.value}`;
+
+
 
     // Abre o link do WhatsApp
     window.open(whatsappUrl, "_blank");

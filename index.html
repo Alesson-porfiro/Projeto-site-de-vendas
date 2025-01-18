@@ -24,6 +24,23 @@
      <meta property="og:description" content="O melhor lugar para adquirir cosmeticos da natura">
      <meta property="og:site_name" content="Natura Consultoria">
 
+     <style>
+
+#cart-items {
+    max-height: 300px; /* Defina um limite de altura para os itens */
+    overflow-y: auto; /* Habilita a rolagem quando necessário */
+    margin-bottom: 1rem;
+}
+
+#cart-modal .flex.items-center.justify-between {
+    position: sticky;
+    bottom: 0;
+    background-color: white; /* Para melhorar o contraste */
+    padding-top: 10px;
+}
+
+     </style>
+
     <title>Natura Consultoria</title>
 </head>
 
@@ -51,23 +68,21 @@
     <!-- INICIO MENU-->
     <div id="menu">
 
-        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-20 mb-16">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-10 mb-16">
 
             <!-- PRODUTO ITEM -->
             <div class="flex gap-2">
-                <img src="assets/perfume1.jpg" alt="Perfume Natura"
+                <img src="assets/teste.jpg" alt="Perfume Natura"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
                 <div>
-                    <p class="font-bold">Una Deo Perfume Feminino</p>
-                    <p class="text-sm">fragrância adocicada e intensa que une a beleza das
-                        notas de praliné com ganache e nuances florais. Enriquecida com poejo, ingrediente natural da
-                        biodiversidade brasileira.</p>
+                    <p class="font-bold">Desodorante Corporal Luna Confiante - 100ml</p>
+                    <p class="text-sm">O Desodorante Corporal Luna Confiante foi desenvolvido para manter você protegida e perfumada ao longo do dia, com fragrância inspirada em um dos maiores sucessos da perfumaria Natura.</p>
 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 249.99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Una Deo Perfume Feminino"
-                            data-price="249.99">
+                        <p class="font-bold text-lg">R$ 29.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Desodorante Corporal Luna Confiante - 100ml"
+                            data-price="29.99">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -78,17 +93,17 @@
 
             <!-- PRODUTO ITEM -->
             <div class="flex gap-2">
-                <img src="assets/perfume2.jpg" alt="Perfume Natura"
+                <img src="assets/Natura Deo Corporal Biografia Assinatura Feminino - 100ml.jpg" alt="Perfume Natura"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
                 <div>
-                    <p class="font-bold">Eau de Parfum Natura 505 Íris Priprioca 50 ml</p>
-                    <p class="text-sm">fragrância floral amadeirada que surpreenderá seus sentidos. traz uma combinação exclusiva dos óleos naturais da íris, um clássico da perfumaria mundial, e da priprioca, raiz aromática nativa da Amazônia.</p>
+                    <p class="font-bold">Natura Deo Corporal Biografia Assinatura Feminino - 100ml</p>
+                    <p class="text-sm"> O Desodorante Corporal Biografia Feminino foi desenvolvido para manter você protegida e perfumada ao longo do dia, Sua fórmula combina tecnologia desodorante que protege contra os odores da transpiração com perfumação que é perfeita para o seu dia a dia.</p>
 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 349.99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Eau de Parfum Natura 505 Íris Priprioca 50 ml"
-                            data-price="349.99">
+                        <p class="font-bold text-lg">R$ 29.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Natura Deo Corporal Biografia Assinatura Feminino - 100ml"
+                            data-price="29.99">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -97,47 +112,9 @@
             </div>
             <!-- FIM PRODUTO ITEM -->
 
-            <!-- PRODUTO ITEM -->
-            <div class="flex gap-2">
-                <img src="assets/perfume3.jpg" alt="Perfume Natura"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+            
 
-                <div>
-                    <p class="font-bold">Essencial Feminino 100 ml</p>
-                    <p class="text-sm">fragrância sofisticada que combina elegância e intensidade. com notas florais e amadeiradas, é perfeito para a mulher que busca uma presença marcante e refinada, ideal para todas as ocasiões.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 249.99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Essencial Feminino 100 ml"
-                            data-price="249.99">
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-            <!-- FIM PRODUTO ITEM -->
-
-            <!-- PRODUTO ITEM -->
-            <div class="flex gap-2">
-                <img src="assets/perfume4.jpg" alt="Perfume Natura"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-
-                <div>
-                    <p class="font-bold">Luna Absoluta 75 ml</p>
-                    <p class="text-sm">fragrância intensa e envolvente que celebra a sensualidade e a força feminina. com notas florais e amadeiradas, exala poder e elegância, perfeito para mulheres que desejam marcar presença em qualquer ocasião.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 149.99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Luna Absoluta 75 ml"
-                            data-price="149.99">
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-            <!-- FIM PRODUTO ITEM -->
+            
         </main>
 
         <div class="mx-auto max-w-7xl px-2 my-2">
@@ -146,21 +123,21 @@
 
 
         <!-- GRID BEBIDAS -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-20 mb-16" id="menu">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-10 mb-16" id="menu">
 
             <!-- CREME ITEM -->
             <div class="flex gap-2">
-                <img src="assets/creme1.jpg" alt="Perfume Natura"
+                <img src="assets/Creme-Essencial.jpg" alt="Perfume Natura"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
                 <div class="w-full">
-                    <p class="font-bold">Creme Desodorante Nutritivo para o Corpo Tododia Amora Vermelha e Jabuticaba</p>
-                    <p class="text-sm">Desperte seus sentidos com o Creme Desodorante para o Corpo Tododia Amora Vermelha e Jabuticaba, fragrância frutal leve.</p>
+                    <p class="font-bold">Desodorante Hidratante Corporal Essencial Feminino 100 Ml</p>
+                    <p class="text-sm">A fragrância Essencial também em versão hidratante. Com alto poder de hidratação e toque aveludado, proporciona uma textura suave para a pele, Experimente a sensação única da fragrância marcante de Essencial em todo o corpo.</p>
 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 49.99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creme Desodorante Nutritivo para o Corpo Tododia Amora Vermelha e Jabuticaba"
-                            data-price="49.99">
+                        <p class="font-bold text-lg">R$ 19.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Desodorante Hidratante Corporal Essencial Feminino 100 Ml"
+                            data-price="19.99">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -171,17 +148,18 @@
 
             <!-- CREME ITEM -->
             <div class="flex gap-2">
-                <img src="assets/creme2.jpg" alt="Perfume Natura"
+                <img src="assets/creme1.jpg" alt="Perfume Natura"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
                 <div class="w-full">
-                    <p class="font-bold">Creme Desodorante Nutritivo para o Corpo Framboesa e Pimenta Rosa Tododia</p>
-                    <p class="text-sm">Sinta seu corpo com o Creme Desodorante Nutritivo Tododia Framboesa e Pimenta Rosa. Uma combinação balanceada de ingredientes naturais com nutrição prebiótica.</p>
+                    <p class="font-bold">Creme Desodorante Nutritivo para o Corpo Tododia Amora Vermelha e Jabuticaba
+                    </p>
+                    <p class="text-sm">Amora Vermelha e Jabuticaba, fragrância frutal leve. Fórmula inteligente com nutrição prebiótica, que se adapta ao que sua pele precisa a cada dia.</p>
 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 49.99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creme Desodorante Nutritivo para o Corpo Framboesa e Pimenta Rosa Tododia"
-                            data-price="49.99">
+                        <p class="font-bold text-lg">R$ 39.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creme Desodorante Nutritivo para o Corpo Tododia Amora Vermelha e Jabuticaba"
+                            data-price="39.99">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -198,13 +176,13 @@
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
                 <div class="w-full">
-                    <p class="font-bold">Creme Noturno Para o Corpo Tododia Todanoite</p>
-                    <p class="text-sm">Após um banho relaxante, complemente o ritual de autocuidado noturno com nutrição profunda. O Creme Noturno Para o Corpo Tododia Todanoite recupera sua pele enquanto você dorme, com nutrição prebiótica + vitamina B5.</p>
+                    <p class="font-bold">Creme Nutritivo Para os Pés Tododia Cereja e Avelã - 50 ml</p>
+                    <p class="text-sm">Sinta seus pés macios e bem cuidados com o Novo Creme Nutritivo Desodorante Para Pés Tododia. Uma combinação de ingredientes naturais e prebiótico em uma textura cremosa que nutre profundamente reduzindo o ressecamento excessivo e a pele áspera.</p>
 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 49.99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creme Noturno Para o Corpo Tododia Todanoite"
-                            data-price="49.99">
+                        <p class="font-bold text-lg">R$ 14.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creme Nutritivo Para os Pés Tododia Cereja e Avelã - 50 ml"
+                            data-price="14.99">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -219,13 +197,14 @@
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
                 <div class="w-full">
-                    <p class="font-bold">Creme Desodorante Nutritivo para o Corpo Tododia Noz Pecã e Cacau</p>
-                    <p class="text-sm">este creme desodorante para o corpo apresenta uma fragrância floral delicada e envolvente, despertando seus sentidos. além disso, sua fórmula inteligente oferece uma nutrição prebiótica.</p>
+                    <p class="font-bold">Creme Hidratante para as Mãos Biografa Inspire Feminino 40g.</p>
+                    <p class="text-sm">O Creme hidratante para as Mãos traz o equilíbrio perfeito entre um buquê floral refrescante, notas frutadas de pêssego e cassis e um leve toque amadeirado. Um creme atemporal, em sua versão mini, para você fazer história. Biografia, escreva sua história
+                        .</p>
 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 49.99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creme Desodorante Nutritivo para o Corpo Tododia Noz Pecã e Cacau"
-                            data-price="49.99">
+                        <p class="font-bold text-lg">R$ 14.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creme Hidratante para as Mãos Biografa Inspire Feminino 40g."
+                            data-price="14.99">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -241,22 +220,24 @@
         <div class="mx-auto max-w-7xl px-2 my-2">
             <h2 class="text-3xl md:text-4xl font-bold text-center mt-9 mb-6">Sabonetes</h2>
         </div>
+        
 
         <!-- COMEÇO GRID SABONETES -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-20 mb-16" id="menu">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-10 mb-16" id="menu">
+
             <!-- SABONETE ITEM -->
             <div class="flex gap-2">
                 <img src="assets/sabonete1.jpg" alt="Perfume Natura"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
                 <div class="w-full">
-                    <p class="font-bold">Sabonete Em Barra Puro Vegetal Tododia Frutas Vermelhas</p>
-                    <p class="text-sm">Sinta seu corpo em um banho revigorante com o Sabonete Em Barra Tododia. Uma combinação de ingredientes naturais em uma FÓRMULA GENTIL que limpa delicadamente.</p>
+                    <p class="font-bold">Sabonete Barra Tododia Carambola E Mandarina Natura</p>
+                    <p class="text-sm">Carambola E Mandarina promove uma sensação agradável, enquanto limpa e deixa a pele macia e sedosa. Sua fórmula suave e com ingredientes naturais evita o ressecamento e prepara a pele para receber a combinação nutritiva e inteligente dos hidratantes Natura Tododia.</p>
 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 29.99</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sabonete Em Barra Puro Vegetal Tododia Frutas Vermelhas"
-                            data-price="29.99">
+                        <p class="font-bold text-lg">R$ 24.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sabonete Barra Tododia Carambola E Mandarina Natura"
+                            data-price="24.99">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -276,9 +257,121 @@
                     </p>
 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 29.99</p>
+                        <p class="font-bold text-lg">R$ 24.99</p>
                         <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sabonete em Barra Puro Vegetal Tododia Algodão"
-                            data-price="29.99">
+                            data-price="24.99">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- FIM SABONETE ITEM -->
+
+             <!-- SABONETE ITEM -->
+             <div class="flex gap-2">
+                <img src="assets/sabonete3.jpg" alt="Perfume Natura"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div class="w-full">
+                    <p class="font-bold">Sabonete em Barra Puro Vegetal Macadamia</p>
+                    <p class="text-sm">Macadâmia proporciona uma limpeza suave enquanto hidrata a pele, deixando-a macia e perfumada. com uma fragrância envolvente de macadâmia
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 24.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sabonete em Barra Puro Vegetal Macadamia"
+                            data-price="24.99">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- FIM SABONETE ITEM -->
+
+            <!-- SABONETE ITEM -->
+            <div class="flex gap-2">
+                <img src="assets/sabonete4.jpg" alt="Perfume Natura"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div class="w-full">
+                    <p class="font-bold">Sabonete em Barra Amora Vermelha e Jabuticaba</p>
+                    <p class="text-sm">Amora Vermelha e
+                        Jabuticaba promove uma sensação agradável, enquanto
+                       limpa e deixa a pele macia e sedosa. Sua fórmula suave e com ingredientes naturais evita o ressecamento.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 24.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sabonete em Barra Amora Vermelha e Jabuticaba"
+                            data-price="24.99">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- FIM SABONETE ITEM -->
+
+             <!-- SABONETE ITEM -->
+             <div class="flex gap-2">
+                <img src="assets/sabonete5.jpg" alt="Perfume Natura"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div class="w-full">
+                    <p class="font-bold">Sabonete em Barra Puro Vegetal Tododia Alecrim e Sálvia</p>
+                    <p class="text-sm">Alecrim e Sálvia oferece uma experiência sensorial única, combinando a frescura do alecrim com a suavidade da sálvia. sua fórmula pura e vegetal limpa delicadamente a pele
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 24.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sabonete em Barra Puro Vegetal Tododia Alecrim e Sálvia"
+                            data-price="24.99">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- FIM SABONETE ITEM -->
+
+            <!-- SABONETE ITEM -->
+            <div class="flex gap-2">
+                <img src="assets/sabonete6.jpg" alt="Perfume Natura"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div class="w-full">
+                    <p class="font-bold">Sabonete em Barra Puro Vegetal Tododia Noz Pecã e Cacau</p>
+                    <p class="text-sm">Noz Pecã e Cacau promove uma sensação agradável, enquanto limpa e deixa a pele macia e nutrida. sua fórmula suave e com ingredientes naturais.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 24.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sabonete em Barra Puro Vegetal Tododia Noz Pecã e Cacau"
+                            data-price="24.99">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- FIM SABONETE ITEM -->
+
+            <!-- SABONETE ITEM -->
+            <div class="flex gap-2">
+                <img src="assets/sabonete7.jpg" alt="Perfume Natura"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div class="w-full">
+                    <p class="font-bold">Sabonete Em Barra Tododia Cereja E Avelã</p>
+                    <p class="text-sm">Cereja e Avelã faz parte de uma linha de produtos destinados a revigorar a sua pele, limpando-a de maneira gentil, sem agredir, e deixando o cheirinho inconfundível das fragrâncias da natura.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 24.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sabonete Em Barra Tododia Cereja E Avelã"
+                            data-price="24.99">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
