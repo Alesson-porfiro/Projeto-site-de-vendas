@@ -167,12 +167,12 @@ checkOutBtn.addEventListener("click", function () {
 
     // Codifica a mensagem para o WhatsApp
     const message = encodeURIComponent(cartItems);
-    const phone = "+5511970338992";
+    const phone = "+5511954771805";
     
 
 
     // Cria o link para o WhatsApp
-    const whatsappUrl = `https://wa.me/${phone}?text=${message}%0AEndereço: ${addressInput.value} ${cartTotal.value}`;
+    const whatsappUrl = `https://wa.me/${phone}?text=${message}%0AEndereço: ${addressInput.value}`;
 
 
 
