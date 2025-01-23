@@ -162,7 +162,7 @@ checkOutBtn.addEventListener("click", function () {
 
     // Monta a mensagem do pedido
     const cartItems = cart.map((item) => {
-        return ` ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price.toFixed(2)}`;
+        return ` ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price.toFixed(2)} Total: R$${item.price}`;
     }).join("\n");
 
     // Codifica a mensagem para o WhatsApp
